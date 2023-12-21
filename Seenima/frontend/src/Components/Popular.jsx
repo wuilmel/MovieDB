@@ -12,7 +12,7 @@ const PopularSection = () => {
         setLoading(true);
         setError(null);
 
-        // fetch(`http://localhost:8000/popular`)
+        fetch(`http://localhost:8000/popular`)
         // fetch(`'https://seenima-n3v1.onrender.com'/popular`)
 
        
