@@ -6,7 +6,6 @@ const TrendingSection = () => {
     const [topMovie, settopMovie] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const apiKey = 'b514d4ba698a1e25bb051f8f5008b4fb';
 
     useEffect(() => {
 
