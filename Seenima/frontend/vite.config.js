@@ -8,7 +8,7 @@ export default defineConfig({
     port: 4000,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://seenima-n3v1.onrender.com',
         changeOrigin: true
       }
     }
