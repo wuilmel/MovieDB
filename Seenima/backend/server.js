@@ -10,7 +10,7 @@ import path from 'path';
 
 const port = process.env.PORT || 6000;
  
-const apiKey = 'b514d4ba698a1e25bb051f8f5008b4fb';
+const apiKey = process.env.MOVIE_API_KEY;
 
 connectDB();
 
