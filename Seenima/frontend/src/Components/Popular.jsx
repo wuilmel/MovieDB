@@ -13,12 +13,9 @@ const PopularSection = () => {
         setError(null);
 
         // fetch(`http://localhost:8000/popular`)
-        const baseUrl = process.env.NODE_ENV === 'development'
-        ? 'http://localhost:8000'
-        : 'https://seenima-n3v1.onrender.com';
+        fetch(`'https://seenima-n3v1.onrender.com'/popular`)
 
-
-        fetch(`${baseUrl}/popular`)
+       
 
             .then((response) => {
                 if (!response.ok) {
