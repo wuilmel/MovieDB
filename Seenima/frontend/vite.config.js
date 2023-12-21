@@ -26,7 +26,7 @@ export default defineConfig({
     port: 4000,
     proxy: {
       '/api': {
-        target: process.env.NODE_ENV === 'development' ? 'http://localhost:8000' : 'https://seenima-n3v1.onrender.com',
+        target:'https://seenima-n3v1.onrender.com',
         changeOrigin: true,
         secure: false,
       },
