@@ -9,7 +9,8 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://seenima-n3v1.onrender.com',
-        changeOrigin: true
+        changeOrigin: true,
+        secure: false
       }
     }
   }
