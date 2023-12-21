@@ -16,7 +16,12 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+
+app.use(cors({
+  origin: 'https://seenima-n3v1.onrender.com',
+  // Add any other allowed origins as needed
+}));
 
 app.use(express.json());
 
