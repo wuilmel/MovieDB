@@ -6,6 +6,7 @@ const PopularSection = () => {
     const [popularMovie, setpopularMovie] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const apiKey = 'b514d4ba698a1e25bb051f8f5008b4fb';
 
     useEffect(() => {
 
@@ -13,9 +14,6 @@ const PopularSection = () => {
         setError(null);
 
         fetch(`http://localhost:8000/popular`)
-        // fetch(`'https://seenima-n3v1.onrender.com'/popular`)
-
-       
 
             .then((response) => {
                 if (!response.ok) {
